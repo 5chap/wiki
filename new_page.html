@@ -1,0 +1,15 @@
+{% extends "encyclopedia/layout.html" %}
+
+{% block title %}
+{{ randomEntry }}
+{% endblock %}
+
+{% block body %}
+<ul>
+    
+    <li><a href="{% url 'context' randomEntry %}">{{ randomEntry }}</a></li>
+   
+</ul>
+
+
+{% endblock %}
